@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn("bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-400 to-blue-800", inter.className)}>{children}</body>
     </html>
   );
 }
