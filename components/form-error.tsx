@@ -3,7 +3,7 @@
 import { CircleX } from "lucide-react";
 
 interface FormErrorProps {
-    message: string
+    message: string | undefined
 }
 
 export const FormError = ({ message }: FormErrorProps) => {
